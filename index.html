@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Sweet Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="interior-design.png">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div><a href="#">HOME</a></div>
+            <div><a href="#ourVision">ABOUT</a></div>
+            <div><a href="#slider">OUR DESIGNS</a></div>
+            <div><a href="#footer">CONTACT</a></div>
+            <div><a onclick="loginlink()">LOGIN</a></div>
+            <div><a onclick="signuplink()">SIGN UP</a></div>
+        </nav>
+        <div id="login">
+            <div  class="loginblackscreen"></div>
+            <div class="loginpopup">
+                <label>Your email or user name</label><br>
+                <input type="text">
+                <br><br>
+                <label>Your password</label>
+                <br>
+                <input type="password">
+                <br>
+                <button>Submit</button>
+                <br><br>
+                <button class="backbutton" onclick="back(this)">Back</button>
+            </div>
+        </div>
+        <div id="signup">
+            <div  class="loginblackscreen"></div>
+            <div class="signuppopup">
+                <label>Your name</label><br>
+                <input type="text"><br><br>
+                <label>Your email</label>
+                <br><input type="email">
+                <br><br>
+                <label>Your username</label>
+                <br><input type="text">
+                <br><br>
+                <label>Your password</label>
+                <br><input type="password">
+                <br><br>
+                <button>Submit</button><br>
+                <button class="backbutton" onclick="back(this)">Back</button>
+            </div>
+        </div>
+        <div class="display-background">
+            <h1 class="dbh1">Home Designs you'll fall in love with.</h1>
+        </div>
+        <h2 class="dbh2">OUR WORK</h2>
+        <div id="slider">
+            <button id="rightClick" onclick="nextSlide()">&#10095;</button>
+            <button id="leftClick" onclick="prevSlide()">&#10094;</button>
+            <div class="slider-content">
+                <div><img src="images/bedroom.jpg" height="300px" width="700px"></div>
+                <div>
+                    <div class="databox">
+                        <h3>Client's challange: </h3>
+                        <p>Client wanted something more full of patterns and alot of wood. Very spacious and inspired from tree of life.</p>
+                    </div>
+                    <div class="databox">
+                        <h3>Client's Satisfaction</h3>
+                        <p>Client was thoroughly satisfied with our work on their room. It had a pattern inspired from tree of life and wooden artifacts.</p>
+                        <img src="images/five-star-rating.png" height="30px" width="100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-content">
+            <div><img src="images/bedroom2.jpg" height="300px" width="700px"></div>
+            <div>
+                <div class="databox">
+                    <h3>Client's challange: </h3>
+                    <p>Client wanted something elegant and circle was their favorite shape. Client wanted room for natural light and was keen lover of plants. </p>
+                </div>
+                <div class="databox">
+                    <h3>Client's Satisfaction</h3>
+                    <p>Client was thoroughly satisfied with our work on their room. It had all the neccessities client wanted.</p>
+                    <img src="images/five-star-rating.png" height="30px" width="100px;">
+                </div>
+            </div>
+        </div>
+            <div class="slider-content">
+                <div><img src="images/bedroom3.jpg" height="300px" width="700px"></div>
+                <div>
+                    <div class="databox">
+                        <h3>Client's challange: </h3>
+                        <p>Client wanted something very wooden, well lit and decorated.  </p>
+                    </div>
+                    <div class="databox">
+                        <h3>Client's Satisfaction</h3>
+                        <p>Client was thoroughly satisfied with our work on their room. It had all the neccessities client wanted.</p>
+                        <img src="images/five-star-rating.png" height="30px" width="100px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-paint">
+            <div class="dbh2 font-and-margin" id="ourVision">OUR VISION
+            </div>
+            <div class="dbtext">
+            To make great interrior design available to anyone across any border. Our team works our hats off to give you the home decoration of your dreams. All you need to do is to just image all the requirements and we will make it work but beautifully. Our designs will meet the shine of your eyes.
+            <br><br>Design is second nature to us, our designers have atleast 10+ years of experience in the industry. We leave all our cutomers with maximum satisfaction.
+            <br><br>Remember you only built a home once, make it your best and a view to never forget!    
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <h3 class="ftext1">CONTACT</h3>
+                 <p>500 Terry Francine Street,<br>
+                    San Francisco, CA 94158</p><br><br>
+                    Tel: 123-456-7890<br>
+                    Fax: 123-456-7890<br><br>
+                    info@mysite.com<br><br>
+                    <img src="images/facebook icon.png" height="30px" width="30px">
+                    <img src="images/instgram icon.png" height="30px" width="30px">
+                    <img src="images/twitter icon.png" height="30px" width="30px">
+                    <img src="images/youtube icon.png" height="30px" width="30px"><br><br>
+                    <p class="lastthing">© 2035 by Interrior design website. Powered and secured by web</p>
+            </div>
+            <div>
+                <label>Enter your name</label>
+                <br>
+                <input type="text">
+                <br>
+                <label>Enter your email</label>
+                <br>
+                <input type="email">
+                <br>
+                <label>Enter your subject</label>
+                <br>
+                <input type="text">
+                <br>
+                <label>Enter your message</label>
+                <br>
+                <textarea rows="5" cols="50"></textarea><br>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>

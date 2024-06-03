@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Raleway", sans-serif;
+}
+nav{
+    display:flex;
+    background-color:goldenrod ;
+    justify-content: center;
+    gap:150px;
+    cursor:pointer;
+}
+nav a{
+    text-decoration: none;
+    
+    color:white;
+    font-size:23px;
+}
+nav a:hover{
+    color:brown;
+}
+.display-background{
+    background-image:url("images/Luxury-interior-design-home-designing-1-1536x1024.webp");
+    width:100%;
+    height:100vh;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    position:relative;
+    mask-image:linear-gradient(to bottom,#000000 90%,transparent 100%);
+}
+.dbh1{
+    color:white;
+    font-size:80px;
+    position:absolute;
+    width:900px;
+    text-align: center;
+    left:40vh;
+    top:30vh;
+    color:goldenrod;
+}
+.dbh2{
+    color:goldenrod;
+    top:100px;
+    margin-left:200px;
+    font-size:40px;
+    margin-bottom:20px;
+}
+.font-and-margin{
+    font-weight:700;
+    margin-top:50px;
+}
+#slider{
+position: relative;
+display:flex;
+}
+#rightClick,#leftClick{
+    position:absolute;
+    cursor:pointer;
+    top:100px;
+    opacity:1;
+    padding:10px;
+    background-color:transparent;
+    color:goldenrod;
+    border:transparent;
+    font-size:34px;
+}
+#leftClick{
+    left:100px;
+}
+#rightClick{
+    left:90vw;
+}
+.slider-content{
+    height:300px;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+}
+
+.databox{
+    height:150px;
+    width:300px;
+    border:1px solid goldenrod;
+    border-radius:25px;
+    padding:20px;
+    box-sizing: border-box;
+}
+.dbtext{
+    width:900px;
+    font-size:20px;
+    color:white;
+    margin:auto;
+}
+.background-paint{
+    background-image:url("images/brownpaint-removebg-preview.png");
+    height:400px;
+    mask-image:linear-gradient(to bottom,#000000 70%,transparent 100%);
+}
+#footer{
+    
+    display:flex;
+    justify-content: center;
+    gap:100px;
+    margin-top:20px;
+    background-color: goldenrod;
+    padding:50px;
+   
+}
+#footer input{
+    padding:10px;
+    width:340px;
+    background-color: goldenrod;
+    border:3px solid black;
+}
+#footer textarea{
+    background-color: goldenrod;
+    border:3px solid black;
+}
+#footer button{
+    padding:10px;
+    background-color: black;
+    color:white;
+    border-radius:15px;
+}
+.ftext1{
+    font-weight:700;
+    color:black;
+    font-size:40px;
+    
+}
+.lastthing{
+    font-size:12px;
+}
+#login{
+  display:none;
+}
+.loginblackscreen{
+    height:1000px;
+    width:1400px;
+    background-color:rgba(0,0,0,0.5);
+    position:fixed;
+    top:-10px;
+    z-index: 1;
+}
+.loginpopup{
+    height:400px;
+    width:300px;
+    border-radius:10px;
+    position:absolute;
+    border:3px solid goldenrod;
+    z-index: 2;
+    left:40%;
+    background-color: white;
+    box-sizing: border-box;
+    padding:20px;
+    padding-top:60px;
+}
+.loginpopup input,button{
+    margin-top:20px;
+    padding:10px;
+    
+}
+.loginpopup button{
+    
+    width:100px;
+    background-color:black;
+    color:white;
+    cursor:pointer;
+    border:0;
+}
+.backbutton{
+    background-color:goldenrod !important;
+}
+#signup{
+    display:none;
+}
+.signuppopup{
+    height:500px;
+    width:300px;
+    border-radius:10px;
+    position:absolute;
+    border:3px solid goldenrod;
+    z-index: 2;
+    left:40%;
+    background-color: white;
+    box-sizing: border-box;
+    padding:20px;
+    padding-top:60px;
+}
+.signuppopup input,button{
+    margin-top:5px;
+    padding:10px;   
+}
+.signuppopup button{
+    
+    width:100px;
+    background-color:black;
+    color:white;
+    cursor:pointer;
+    border:0;
+}
